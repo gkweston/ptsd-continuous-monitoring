@@ -8,9 +8,9 @@ library(imputeTS)
 
 ###Due to some reasons it cannot impute around 10 files. Those files are implemented separately
 i<- 1
-p<- list.files("/Users/gkweston/Desktop/workingFiles/acelab/proj2/Pre Kalman Imputed/", pattern="*.csv", full.names=TRUE)
+p<- list.files("/Users/gkweston/git/ptsd-continuous-monitoring/data/prep_output/P13FIXIMP/", pattern="*.csv", full.names=TRUE)
 
-setwd("/Users/gkweston/Desktop/workingFiles/acelab/proj2/Kalman Imputed/")
+setwd("/Users/gkweston/git/ptsd-continuous-monitoring/data/prep_output/P13FIXIMP/")
 for (i in 1:98) {
   #reading in data
   df<- fread(filename <- p[[i]])
